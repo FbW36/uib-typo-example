@@ -1,0 +1,80 @@
+/* essentially the html */
+:root { 
+    /* with base font of 16px this will be 10px */
+    font-size: 62.5%;
+    /* font-size: 10px; */
+}
+
+/* 
+
+px -> absolute value
+
+rem -> calculate final value based on root element font size
+
+em -> calculate final value based on parent font size
+
+*/
+
+body {
+    /* background-color: rgb(150, 150, 150);
+    background-color:  rgba(150, 150, 150, 0.5); */
+    background-color: #ddd;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+h1 {
+    /* 2.5 * root font size  */
+    font-size: 2.5rem;
+    text-align: center; 
+    font-weight: 700;
+    /* use with right to left languages */
+    /* direction: rtl; */
+
+    text-transform: uppercase;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1 em {
+    font-style: italic;
+    color: red;
+    text-decoration: line-through;
+}
+
+a {
+    color: #684141;
+    font-weight: bold;;
+    text-decoration: none;
+}
+
+/* Special headline */
+.special-headline {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    text-shadow: 16px 20px 20px #fff172;
+}
+
+.three-d-headline {
+    font-size: 4rem;
+    font-style: normal;
+    /* Change the font weight - only possible if the font has the weigth */
+    font-weight: 900;
+    /* Use chrome text shadow visual editor */
+    text-shadow: 0px 0px 3px hotpink, 3px -3px 0 #673AB7, 3px -3px 20px #fff;
+    color: #fff;
+}
